@@ -1,0 +1,9 @@
+{
+	"name": "llvm-obfuscation-playground",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"features": {
+		"ghcr.io/jungaretti/features/make:1": {}
+	}
+}
