@@ -1,0 +1,1 @@
+add_library(HelloWorld SHARED HelloWorld.cpp)
