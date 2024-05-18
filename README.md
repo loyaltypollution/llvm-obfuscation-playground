@@ -9,17 +9,25 @@ Supported LLVM versions:
 
 ### List of passes
 
-| Projects | Description                                                      | Author                                                  |
-| :------- | :--------------------------------------------------------------- | :------------------------------------------------------ |
-| Goron    | [from goron project](https://github.com/amimo/goron)             | [amimo](https://github.com/amimo)                       |
-| Hikari   | [from hikari project](https://github.com/61bcdefg/Hikari-LLVM15) | [*maintained by](https://github.com/61bcdefg)           |
-| Loyalty  | stack-string obfuscation, outlining                              | [loyaltypollution](https://github.com/loyaltypollution) |
+| Projects     | Description                                                      | Author                                                  |
+| :----------- | :--------------------------------------------------------------- | :------------------------------------------------------ |
+| Goron        | [from goron project](https://github.com/amimo/goron)             | [amimo](https://github.com/amimo)                       |
+| Hikari       | [from hikari project](https://github.com/61bcdefg/Hikari-LLVM15) | [*maintained by](https://github.com/61bcdefg)           |
+| Loyalty      | stack-string obfuscation, outlining                              | [loyaltypollution](https://github.com/loyaltypollution) |
+| Callfuscator | Per-instruction outlining to functions                           | [d0minik](https://github.com/d0mnik)                    |
 
 ### Loyalty
 | Pass              | Description                                              |
 | :---------------- | :------------------------------------------------------- |
 | `-enable-sstring` | Performs stack-string obfuscation on all global strings. |
 | `-enable-outline` | Performs outlining on all BinaryOperator instructions.   |
+
+
+### Callfuscator
+
+| Pass           | Description                              |
+| :------------- | :--------------------------------------- |
+| `outlinefuncs` | Performs outlinining on all instructions |
 
 
 ### Dockerfile
